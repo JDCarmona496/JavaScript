@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreaFiguras</title>
+    <script>
+        const figura = prompt("Hola Usuario, puedo calcular el área de un rombo, rectangulo, triangulo, cuadrado, circulo y piramide. ¿Cuál eliges?")
+        switch (figura){
+            case "rombo":
+                let diagmay = parseInt(prompt("Dime al valor de la diagonal mayor:"))
+                let diagmen = parseInt(prompt("Dime al valor de la diagonal menor:"))
+                let area = parseInt(diagmay*diagmen/2)
+                document.write("El área del rombo es " + area + "cm")
+                    break;
+            case "piramide":{
+                let base = parseInt(prompt("Dime el valor de la base"));
+                let altura = parseInt(prompt("Dime el valor de la altura:"));
+                let areabase = parseInt((base**2)*(altura)/3);
+                document.write("El área de la piramide es: " + areabasepri + "cm");
+                    }   
+                    break;
+            case "rectangulo":{
+                let altura = parseInt(prompt("Dime el valor de la altura: "));
+                let base = parseInt(prompt("Dime el valor de la base: "));
+                let area = parseInt(base*altura);
+                document.write("El área del rectangulo es: " + area + "cm" );
+                    }
+                    break;
+            case "triangulo":{
+                let altura = parseInt(prompt("Dime el valor de la altura: "));
+                let base = parseInt(prompt("Dime el valor de la base: "));
+                let area = parseInt((base*altura)/2);
+                document.write("El area del triangulo es: " + area + "cm");
+                    }
+                    break;
+            case "cuadrado":{
+                let lado = parseInt(prompt("Dime el valor de un lado: "));
+                let area = parseInt(lado*lado);
+                document.write("El area del cuadrado es: " + area  + "cm");
+                    }
+                    break;
+            case "circulo":{
+                let radio = parseInt(prompt("Dime el valor del radio: "));
+                let PI = 3.14
+                let area = Number((radio**2)*PI).toFixed(2);
+                document.write("El area del circulo es: " + area + " cm")
+                    }
+                    break;
+            default :
+                document.write("No cuento con la formula para hallar el área de esa figura.")
+                
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
