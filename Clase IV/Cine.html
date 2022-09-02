@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine</title>
     <script>
+        let valorBoleto = 10000
         let pelicula = prompt("Bienvenido al Cine. El día de hoy tenemos disponibles las siguientes peliculas: Creep, El Gato, Negociador, The Man y El Padrino")
 
         if (pelicula.length === 0) {
             alert("El campo esta vacio")  
-            return prompt; 
+        if (boleto > 5){
+                     descuento = (boleto * valorBoleto) - 5%
+                     document.write("La pelicula que has escogido es: " + pelicula + " y el precio de los boletos es: " + descuento)
+            }
+            {
+                let valorFinal =  boleto * 10000
+        }
         }
         else{
             switch (pelicula){
                 case "Creep":
-                    let boleto = parseInt( prompt("¿Cuantas boletas desea comprar?"))
-                if (boleto >= 5){
-                     descuento = boleto - 5%
-            }
-            else {
-                let valorFinal =  
-            }
+                    boleto = parseInt( prompt("¿Cuantas boletas desea comprar?"))
+                
             break;
 
             default:
