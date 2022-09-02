@@ -8,24 +8,20 @@
     <script>
         let valorBoleto = 10000
         let pelicula = prompt("Bienvenido al Cine. El día de hoy tenemos disponibles las siguientes peliculas: Creep, El Gato, Negociador, The Man y El Padrino")
-
+        //Para validar que el campo no este vacio 
         if (pelicula.length === 0) {
-            alert("El campo esta vacio")  
-        if (boleto > 5){
-                     descuento = (boleto * valorBoleto) - 5%
-                     document.write("La pelicula que has escogido es: " + pelicula + " y el precio de los boletos es: " + descuento)
-            }
-            {
-                let valorFinal =  boleto * 10000
-        }
+            alert("El campo esta vacio, recargue la página.") 
+        
         }
         else{
             switch (pelicula){
                 case "Creep":
-                    boleto = parseInt( prompt("¿Cuantas boletas desea comprar?"))
-                
+                case "El Gato":
+                case "Negociador":
+                case "The Man ":
+                case "El Padrino":
+                document.write("La pelicula esta disponible.")
             break;
-
             default:
             document.write("No contamos con esto en nuestra cartelera.")
             break;
@@ -40,3 +36,13 @@
     
 </body>
 </html>
+// cantidadBoleto = parseInt( prompt("¿Cuantas boletas desea comprar?"))
+//         if (boleto > 5){
+//          let descuento = ((cantidadBoleto * valorBoleto) * 0.5)
+//          document.write("La pelicula que has escogido es: " + pelicula + " y el precio de los boletos es: " + descuento)
+//         }
+// else{
+//     let valorFinal =  boleto * valorBoleto
+//     document.write("La pelicula que has escogido es: " + pelicula + " y el precio de los boletos es: " + valorFinal)
+//     }
+// }
