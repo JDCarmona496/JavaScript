@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numeros Pares e Impares</title>
-
+    <title>NumsParImpar</title>
+    <!-- EJERCICIO 2: En un archivo html crea un script que pida 10 números (pares o impares), el programa
+    debe validar si el usuario ingresa un valor, si no ingresó un valor deber mostrar un mensaje indicando
+    que ingrese ese valor. Los valores ingresados no pueden ser negativos, si el usuario ingresa valores
+    negativos debe mostrar una alerta indicando que no se puede realizar la acción. Al terminar el
+    proceso, debe imprimir los números que ingresó, así como especificar si ese número se clasifica
+    como par o impar. Para realizar este ejercicio debe hacer uso del ciclo For. -->
     <script>
         
-let num=parseInt(prompt("digite del 1 al 10"));
 
-if(num.length == 10){
-    alert("No se pueden ingresar mas de 10 valores");
-    return;
-}
-if(numero.length == 0){
-    alert("numero no valido");
-    return;
-}
+        
+        let contador;
+        contador = parseInt(contador);
 
+        for (contador = 1; contador <= 10; contador++){
+            let n1 = parseInt(prompt("Ingrese un digito "));
 
-
-for (let i=1; i<=num; i++){
-document.write( i + ' es un numero par <br>')
-document.write(i + ' es un numero impar <br>')
-}
-
-
-
-
-
+            if (n1 === null )   
+            {alert("Ingrese un numero ")}
+            if (n1 <= 0 )       
+            {alert("El numero no puede ser menor a 0 ")}
+            
+            else{
+                if (n1 % 2 == 0)
+                {document.write("El numero " + n1 + " es par" + "<br>");}    
+                else
+                {document.write("El numero " + n1 + " es impar" + "<br>");}
+        }
+            
+            
+                
+            
+    }
 
 
     </script>
